@@ -1,15 +1,17 @@
 <template>
-  <router-view/>
+  <div id="app">
+    <ACLView />
+    <div class="footer" />
+  </div>
 </template>
 
 <script>
+import ACLView from "@/views/ACLView.vue";
 
 export default {
-  name: 'App',
-  components: {
-
-  },
-}
+  name: "App",
+  components: { ACLView },
+};
 </script>
 
 <style>
@@ -19,6 +21,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 0px;
+  margin-top: 60px;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
 }
 </style>

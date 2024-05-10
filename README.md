@@ -1,4 +1,4 @@
-# sm9-web
+# cryptfs
 
 ## Project setup
 ```
